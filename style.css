@@ -8,6 +8,7 @@ body {
   overflow-wrap: break-word;
 }
 
+/* Desktop */
 h1 {
   font-weight: 600;
   color: black;
@@ -27,7 +28,7 @@ h2 {
 
 .container {
   width: 100%;
-  max-width: 768px;
+  max-width: 75%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -123,3 +124,25 @@ section.module.parallax h2 {
   z-index: 50;
   text-transform: uppercase;
 }
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  
+  body {
+    word-wrap: none;
+    overflow-wrap: none;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-weight: 600;
+  }
+  
+  section.module.parallax h1 {
+    font-size: 60px;
+
+  }
+
+}
+
+
